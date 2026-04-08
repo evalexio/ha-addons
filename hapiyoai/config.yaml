@@ -1,0 +1,28 @@
+name: "hapiyoai"
+version: "0.2.6"
+slug: "hapiyoai"
+description: "Home Assistant dashboard and entity bridge for PiyoAI cameras"
+url: "https://github.com/evalexio/ha-addons"
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: false
+homeassistant_api: true
+ingress: true
+ingress_port: 8099
+ingress_stream: true
+panel_icon: "mdi:cctv"
+panel_title: "HAPiyoAI"
+watchdog: "http://[HOST]:[PORT:8099]/health"
+map:
+  - type: data
+stage: experimental
+options:
+  piyoai_url: "http://192.168.1.100"
+  piyoai_port: 8000
+schema:
+  piyoai_url: str
+  piyoai_port: "int(1,65535)"
+image: "ghcr.io/alexsoh/{arch}-hapiyoai"
