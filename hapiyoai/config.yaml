@@ -1,5 +1,5 @@
 name: "hapiyoai"
-version: "0.2.6"
+version: "0.2.7"
 slug: "hapiyoai"
 description: "Home Assistant dashboard and entity bridge for PiyoAI cameras"
 url: "https://github.com/evalexio/ha-addons"
@@ -25,4 +25,4 @@ options:
 schema:
   piyoai_url: str
   piyoai_port: "int(1,65535)"
-image: "ghcr.io/alexsoh/{arch}-hapiyoai"
+image: "ghcr.io/evalexio/{arch}-hapiyoai"
