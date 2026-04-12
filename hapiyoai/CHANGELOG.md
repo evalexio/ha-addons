@@ -1,9 +1,18 @@
 # Changelog
 
+## 0.2.9
+
+- CI: `sync-store` checkouts use `persist-credentials: false` so pushes to `ha-addons` use the deploy key
+- CI: `publicize-ghcr-packages` workflow documents PAT-based GHCR visibility for HA pulls
+
 ## 0.2.8
 
 - Add `publish-release.sh` to commit and push `main` (Builder publishes on push)
 - README: clarify add-on store install step title
+
+## 0.2.7
+
+- Publish container images to `ghcr.io/evalexio/{arch}-hapiyoai`; source repo is now `evalexio/hapiyoai` (private)
 
 ## 0.2.2
 

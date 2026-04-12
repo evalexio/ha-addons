@@ -1,5 +1,5 @@
 name: "hapiyoai"
-version: "0.2.8"
+version: "0.2.9"
 slug: "hapiyoai"
 description: "Home Assistant dashboard and entity bridge for PiyoAI cameras"
 url: "https://github.com/evalexio/ha-addons"
