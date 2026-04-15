@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- CI: fix `publicize-ghcr` job skipped on `workflow_dispatch` (was push-only)
+- CI: `publicize-ghcr` script now checks package visibility and prints UI link (GitHub REST API has no PATCH visibility endpoint)
+- CI: `GH_PACKAGES_PAT` only needs `read:packages` for the visibility check
+
 ## 0.2.9
 
 - CI: `sync-store` checkouts use `persist-credentials: false` so pushes to `ha-addons` use the deploy key
